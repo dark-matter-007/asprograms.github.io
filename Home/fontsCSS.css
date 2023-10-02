@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "Azonix";
+    src: url('./Azonix.otf') format('woff2');
+    font-weight: normal;
+    font-size: normal;
+}
+
+.font-azonix {
+    font-family: 'Azonix', monospace;
+}
