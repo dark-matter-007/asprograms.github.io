@@ -61,12 +61,11 @@ body {
     -webkit-box-reflect: below -28px linear-gradient(transparent, #1112);
     overflow: hidden;
     animation: type 1.5s steps(13) forwards;
-    text-wrap: nowrap;
 }
 
 .typing_no_reflection {
     overflow: hidden;
-    animation: type 1.5s steps(13) forwards;
+    animation: type-small 3s steps(13) forwards;
     text-wrap: nowrap;
 }
 
@@ -131,7 +130,18 @@ body {
     }
 
     100% {
-        width: 384.09px;
+        width: 304.09px;
+    }
+}
+
+@keyframes type-small {
+
+    0%{
+        width: 0px;
+    }
+
+    100% {
+        width: 154.09px;
     }
 }
 
