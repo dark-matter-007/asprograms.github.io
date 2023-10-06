@@ -16,12 +16,11 @@
     
     <script type="module" src="./loginScript.js"> </script>
 
+    <!-- Login Logic Here -->
     <div id="logOverButton" class=" py-1 flex bg-zinc-700 px-1 rounded-full absolute top-4 right-4 hover:scale-110 transition-all duration-300 hover:bg-zinc-600 cursor-pointer">
         <img src="./Resources/Images/accountIcon.png" alt="accountImage" class=" bg-zinc-800 rounded-full animate-breathe hover:bellShake p-1 h-[40px] ">
         <h1 id="userName" class=" h-auto  mx-2 my-auto"> Guest </h1>
     </div>
-
-
     <div id="loginOverlay" class=" transition-all duration-700 flex flex-col place-content-center fixed top-0 left-0 z-10 backdrop-blur-md w-screen h-screen">
         <h1 class=" text-md text-zinc-400 mx-auto w-[250px] sm:w-[350px] text-center"> The login backend is working! <br> But we have not implemented individual experiences. </h1>
         
@@ -41,11 +40,13 @@
         <h1 class=" text-center text-green-300 text-sm mt-3" id="loginNotifications"></h1>
     </div>
 
-    <div class=" mt-[-150px]">
+    <!-- Main Body -->
+    <div class=" mt-[-130px]">
         <h1 class='text-xl h-fit py-2 w-fit typing_no_reflection text-white mx-auto mb-[-65px] translate-x-[-60px]'> Welcome to... </h1>
         <br>
         <h1 class=' text-5xl font-azonix  text-cyan-300 h-fit text-right py-2 w-fit typing mx-auto  transition-all duration-200 '> AS Programs </h1>
     </div>
+
     <div class=" fixed bottom-0 w-screen pt-3 bg-zinc-800/20 backdrop-blur-sm border-t-2 border-white/10">
         <h1 class=" w-fit mx-auto text-lg"> We are live with our classes!</h1>
         <br>
@@ -82,6 +83,12 @@
         <span class="tooltiptext text-sm">Store</span>
       </a>
     </div>
+
+    
+    <div class=" mb-[-600px] pt-[400px]">
+       <h1>  This space is for sizing issues</h1>
+    </div>
+
 
 </body>
 </html>
