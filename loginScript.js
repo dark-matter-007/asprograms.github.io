@@ -65,3 +65,9 @@ function handleSignup() {
         console.log("Could NOT create user :(");
     });
 }
+
+document.getElementById("skipButton").onclick = handleSkip
+function handleSkip() {
+    document.getElementById("loginOverlay").outerHTML = "<div class=' hidden'> </div>"
+    console.log("skipped login")
+}
