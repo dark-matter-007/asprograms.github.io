@@ -84,26 +84,26 @@ function handleSkip() {
     console.log("skipped login")
 }
 
-// document.getElementById("visitCounter").innerText = "fetching...";
-// get ( ref(database, "visitors/number") ).then ( (response) => {
-//     if ( response.val() == null ) {
-//         console.log("no visitors")
-//         set ( ref(database, "visitors"), {"number" : 1}).then(() => {
-//             console.log("got first visitor!");
-//         }).catch((err) => {
-//             console.log ("Could not increment visitors :(");
-//         })
-//         document.getElementById("visitCounter").innerText = "error";
-//     } else {
-//         set ( ref(database, "visitors"), {"number" : response.val() + 1}).then(() => {
-//             console.log("incremented visitor number!");
-//         }).catch((err) => {
-//             console.log ("Could not increment visitors :(");
-//         })
-//         console.log("Got total visitors = " + (response.val() + 1));
-//         document.getElementById("visitCounter").innerHTML = "<span class = ' text-2xl'>" + ( response.val() + 1) + "</span>";
-//         };
-//     }).catch ((err) => {
-//         console.log ("Faced issues in fetching visits" + err);
-//     })
+document.getElementById("visitCounter").innerText = "fetching...";
+get ( ref(database, "visitors/number") ).then ( (response) => {
+    if ( response.val() == null ) {
+        console.log("no visitors")
+        set ( ref(database, "visitors"), {"number" : 1}).then(() => {
+            console.log("got first visitor!");
+        }).catch((err) => {
+            console.log ("Could not increment visitors :(");
+        })
+        document.getElementById("visitCounter").innerText = "error";
+    } else {
+        set ( ref(database, "visitors"), {"number" : response.val() + 1}).then(() => {
+            console.log("incremented visitor number!");
+        }).catch((err) => {
+            console.log ("Could not increment visitors :(");
+        })
+        console.log("Got total visitors = " + (response.val() + 1));
+        document.getElementById("visitCounter").innerHTML = "<span class = ' text-2xl'>" + ( response.val() + 1) + "</span>";
+        };
+    }).catch ((err) => {
+        console.log ("Faced issues in fetching visits" + err);
+    })
 
