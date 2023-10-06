@@ -37,8 +37,8 @@ const database = getDatabase(app);
 
 
 document.getElementById("loginButton").onclick = handleLogin
-function handleLogin() {
-    document.getElementById("loginNotifications").innerText = "Processing request..."
+function handleLogin() {    
+    document.getElementById("loginNotifications").innerHTML = " <h1 class=' text-white'> Processing request... </h1>"
     const name = document.getElementById("name").value
     const pswd = document.getElementById("pswd").value
     get( ref(database, "users/" + name)).then((response) => {
@@ -57,14 +57,31 @@ function handleLogin() {
 
 document.getElementById("signupButton").onclick = handleSignup
 function handleSignup() {
-    document.getElementById("loginNotifications").innerText = "Processing request..."
+    document.getElementById("loginNotifications").innerHTML = " <h1 class=' text-white'> Processing request... </h1>"
     const name = document.getElementById("name").value
     const pswd = document.getElementById("pswd").value
-    set( ref(database, "users/" + name), { "name" : name, "pswd" : pswd }).then(() => {
-        console.log("User created successfully!")
-        document.getElementById("loginNotifications").innerHTML = "<h1> Sign Up Successful! Now LogIn with the same. </h1>"
-    }).catch((err) => {
-        console.log("Could NOT create user :(");
+    get( ref(database, "users/" + name)).then((response) => {
+        document.getElementById("loginNotifications").innerHTML = " <h1 class=' text-red-300'> The user already exists! </h1>"
+        if ( response.val() == null ) {
+            document.getElementById("loginNotifications").innerHTML = " <h1 class=' text-red-300'> The user does not exist! </h1>"
+            set( ref(database, "users/" + name), { "name" : name, "pswd" : pswd }).then(() => {
+                console.log("User created successfully!")
+                document.getElementById("loginNotifications").innerHTML = "<h1> Sign Up Successful! Now Login with the same. </h1>"
+            }).catch((err) => {
+                 document.getElementById("loginNotifications").innerHTML = " <h1 class=' text-red-300'> Failure : unknown reason :( </h1>"
+                console.log("Failed - unknown reason :(");
+            });    
+        }
+        }
+    ).catch((err) => {
+        document.getElementById("loginNotifications").innerHTML = " <h1 class=' text-red-300'> The user does not exist! </h1>"
+        set( ref(database, "users/" + name), { "name" : name, "pswd" : pswd }).then(() => {
+            console.log("User created successfully!")
+            document.getElementById("loginNotifications").innerHTML = "<h1> Sign Up Successful! Now Login with the same. </h1>"
+        }).catch((err) => {
+             document.getElementById("loginNotifications").innerHTML = " <h1 class=' text-red-300'> Failure : unknown reason :( </h1>"
+            console.log("Failed - unknown reason :(");
+        });
     });
 }
 
