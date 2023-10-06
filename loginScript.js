@@ -18,22 +18,14 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
 
-// Get data from the Realtime Database once
-// const myValRef = ref(database, "users/ashwin");
+document.getElementById("loginOverlay").setAttribute("style", "opacity : 0; z-index: -10;");
+document.getElementById("logOverButton").onclick = toggleLoginOverlay
 
-// get(myValRef)
-//   .then((snapshot) => {
-//     if (snapshot.exists()) {
-//       const myVal = snapshot.val();
-//       console.log("myVal value is - ", myVal);
-//     } else {
-//       console.log("No data available");
-//     }
-//   })
-//   .catch((error) => {
-//     console.error("Error reading data: ", error);
-//   });
-
+function toggleLoginOverlay() {
+    document.getElementById("loginOverlay").setAttribute("style", "opacity : 1;")
+    console.log("login overlay was toggled!")
+}
+// toggleLoginOverlay()
 
 
 document.getElementById("loginButton").onclick = handleLogin
@@ -46,6 +38,7 @@ function handleLogin() {
         if (response.val().pswd == pswd) {
             console.log("login verified");
             document.getElementById("loginNotifications").innerText = "Login Successful!"
+            document.getElementById("userName").innerText = name;
         } else {
             document.getElementById("loginNotifications").innerHTML = " <h1 class=' text-red-300'> Login Failed :( <br>Check your password! </h1>"
         }
@@ -53,7 +46,6 @@ function handleLogin() {
         document.getElementById("loginNotifications").innerHTML = " <h1 class=' text-red-300'> The user does not exist! </h1>"
     });
 }
-
 
 document.getElementById("signupButton").onclick = handleSignup
 function handleSignup() {
@@ -85,8 +77,33 @@ function handleSignup() {
     });
 }
 
+
 document.getElementById("skipButton").onclick = handleSkip
 function handleSkip() {
-    document.getElementById("loginOverlay").outerHTML = "<div class=' hidden'> </div>"
+    document.getElementById("loginOverlay").setAttribute("style", "opacity:0; z-index: -10;")
     console.log("skipped login")
 }
+
+document.getElementById("visitCounter").innerText = "fetching...";
+get ( ref(database, "visitors/number") ).then ( (response) => {
+    if ( response.val() == null ) {
+        console.log("no visitors")
+        set ( ref(database, "visitors"), {"number" : 1}).then(() => {
+            console.log("got first visitor!");
+        }).catch((err) => {
+            console.log ("Could not increment visitors :(");
+        })
+        document.getElementById("visitCounter").innerText = "error";
+    } else {
+        set ( ref(database, "visitors"), {"number" : response.val() + 1}).then(() => {
+            console.log("incremented visitor number!");
+        }).catch((err) => {
+            console.log ("Could not increment visitors :(");
+        })
+        console.log("Got total visitors = " + (response.val() + 1));
+        document.getElementById("visitCounter").innerHTML = "<span class = ' text-2xl'>" + ( response.val() + 1) + "</span>";
+        };
+    }).catch ((err) => {
+        console.log ("Faced issues in fetching visits" + err);
+    })
+

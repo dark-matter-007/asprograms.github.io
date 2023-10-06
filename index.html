@@ -5,15 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AS Programs || Home</title>
     <link rel="stylesheet" href="./Resources/CSS/masterStyle.css"/>
+    <link rel="stylesheet" href="./Resources/CSS/customStyle.css"/>
+    <link rel="icon" type="img/x-icon" href="ASPLauncherIcon2.png"/>
+    <link rel="img_src"   href="./Resources/Images/homeIcon.png"/>
+    <link rel="favicon" href="./Resources/Images/homeIcon.png"/>
+    <meta property="favicon" content="./Resources/Images/homeIcon"/>
+    <meta property="og:img" content="/ASPLauncherIcon2.jpg"/>  <meta property="og:img:width" content="1080"> <meta property="og:img:height" content="1080">
 </head>
-<body class=" bg-zinc-900 text-white ">
+<body class=" bg-zinc-900 text-white flex-col ">
     
     <script type="module" src="./loginScript.js"> </script>
 
-    <h1> Hello there </h1>
+    <div id="logOverButton" class=" py-1 flex bg-zinc-700 px-1 rounded-full absolute top-4 right-4 hover:scale-110 transition-all duration-300 hover:bg-zinc-600 cursor-pointer">
+        <img src="./resources/Images/accountIcon.png" alt="accountImage" class=" bg-zinc-800 rounded-full animate-breathe hover:bellShake p-1 h-[40px] ">
+        <h1 id="userName" class=" h-auto  mx-2 my-auto"> Guest </h1>
+    </div>
 
-    <div id="loginOverlay" class=" flex flex-col place-content-center fixed top-0 left-0 z-10 backdrop-blur-sm w-screen h-screen">
-        <h1 class=" text-sm text-zinc-400 mx-10 text-center"> The login backend is working! but we have not implemented individual experiences. </h1>
+
+    <div id="loginOverlay" class=" transition-all duration-700 flex flex-col place-content-center fixed top-0 left-0 z-10 backdrop-blur-md w-screen h-screen">
+        <h1 class=" text-md text-zinc-400 mx-auto w-[250px] sm:w-[350px] text-center"> The login backend is working! <br> But we have not implemented individual experiences. </h1>
         
         <div class=" w-fit flex mx-auto space-x-2 mb-5">
             <div id="skipButton" class=" mx-auto mt-2 py-1 px-4 bg-zinc-700 rounded-full hover:scale-105 hover:bg-zinc-600 cursor-pointer transition-all duration-300  "> Skip </div>
@@ -25,10 +35,52 @@
             <input class=" mt-3 mx-2 py-1 rounded-md bg-zinc-800 px-2" id="pswd" type="text" placeholder=" Pasword"/> 
         </div>
         <div class=" w-fit flex mx-auto space-x-2">
-            <div id="loginButton" class=" mx-auto mt-2 py-1 px-4 bg-zinc-700 rounded-full hover:scale-105 hover:bg-zinc-600 cursor-pointer transition-all duration-300  "> Login </div>
-            <div id="signupButton" class=" mx-auto mt-2 py-1 px-4 bg-zinc-700 rounded-full hover:scale-105 hover:bg-zinc-600 cursor-pointer transition-all duration-300  "> SignUp </div>
+            <div id="loginButton" class=" mx-auto mt-2 py-1 px-4 bg-zinc-700 rounded-full hover:scale-105 hover:bg-zinc-500 cursor-pointer transition-all duration-300  "> Login </div>
+            <div id="signupButton" class=" mx-auto mt-2 py-1 px-4 bg-zinc-700 rounded-full hover:scale-105 hover:bg-zinc-500 cursor-pointer transition-all duration-300  "> SignUp </div>
         </div>
         <h1 class=" text-center text-green-300 text-sm mt-3" id="loginNotifications"></h1>
+    </div>
+
+    <div class=" mt-[-150px]">
+        <h1 class='text-xl h-fit py-2 w-fit typing_no_reflection text-white mx-auto mb-[-65px] translate-x-[-60px]'> Welcome to... </h1>
+        <br>
+        <h1 class=' text-5xl font-azonix  text-cyan-300 h-fit text-right py-2 w-fit typing mx-auto  transition-all duration-200 '> AS Programs </h1>
+    </div>
+    <div class=" fixed bottom-0 w-screen pt-3 bg-zinc-800/20 backdrop-blur-sm border-t-2 border-white/10">
+        <h1 class=" w-fit mx-auto text-lg"> We are live with our classes!</h1>
+        <br>
+        <a href="../DashStack/#registration">
+          <div> 
+            <h1 class=" w-fit mx-auto p-3 rounded-t-2xl bg-zinc-700/50 backdrop-blur-sm hover:bg-cyan-700/20 hover:scale-105 transition-all border-white/10 border-2 duration-300 cursor-pointer"> Click to jump directly!</h1>
+          </div>
+        </a>
+  </div>
+
+
+
+  <div class= " animate-breathe w-fit mx-auto mt-16 fadeIn border-t-2 pt-4 rounded-2xl px-4 border-b-2 pb-4">
+    <h1 class=" w-fit "> Total Visits : <span id="visitCounter" class=" text-sm text-green-300"> paused </span></h1>
+    <h1 class=" w-fit mt-2"> Avg Rating : <span class=" text-2xl text-green-300"> 4.8 </span></h1>
+  </div>
+
+  <div class=' flex space-x-3 w-fit mx-auto fadeIn mt-20 reflectBelow'>
+            
+    <img  src="../Resources/Images/homeIcon.png" class=" animate-bounce  pr-2 border-white/50 py-1 drop-shadow-sm shadow-white cursor-no-drop transition-all duration-300" />
+    
+    <a href="./InfoStack" class="tooltip">
+        <img src="../Resources/Images/dashStackIcon.png" class="hover:translate-y-[-5px] drop-shadow-sm h-[30px] w-auto shadow-white cursor-pointer hover:scale-125 transition-all duration-300" />
+        <span class="tooltiptext text-sm">About</span>
+      </a>
+      
+      <a href="./Help" class="tooltip">
+        <img src="../Resources/Images/helpIcon.png" class=" hue-rotate-60 drop-shadow-sm h-[30px] hover:translate-y-[-5px] shadow-white cursor-pointer hover:scale-125 transition-all duration-300" />
+        <span class="tooltiptext text-sm">Help </span>
+       </a>
+
+      <a href="./Store" class="tooltip">
+        <img src="../Resources/Images/appsIcon.png" class="hue-rotate-[120deg] drop-shadow-sm h-[30px] w-[30px] hover:translate-y-[-5px] shadow-white cursor-pointer hover:scale-125 transition-all duration-300" />
+        <span class="tooltiptext text-sm">Store</span>
+      </a>
     </div>
 
 </body>

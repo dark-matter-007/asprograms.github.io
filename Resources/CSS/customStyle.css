@@ -1,0 +1,208 @@
+/* Importing fonts from Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+    font-family: 'Azonix';
+    src: url("./Azonix.otf") format('opentype');
+}
+
+/* Reseting */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    transition: all 300ms;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: fit-content;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Position the tooltip above the button */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #121215;
+}
+
+.fadeIn {
+    animation: fadeIn 4s forwards;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(-25%);
+        animation-timing-function: cubic-bezier(0.8,0,1,1);
+    }
+
+    45% {
+        transform: none;
+    }
+
+    48% {
+        transform: scale(1.1, 0.8);
+    }
+
+}
+
+@keyframes fadeIn {
+    from {opacity: 0%;};
+    to {opacity: 100%;}
+}
+
+@keyframes cursorBlink {
+
+    0%,
+    75% {
+        opacity: 1;
+    }
+
+    76%,
+    100% {
+        opacity: 0;
+    }
+}
+
+.font-azonix {
+    font-family: 'Azonix';
+    font-style: normal;
+    font-weight: normal;
+}
+
+.reflectBelow {
+    -webkit-box-reflect: below -5px linear-gradient(transparent, #3222);
+}
+
+.typing {
+    -webkit-box-reflect: below -28px linear-gradient(transparent, #1112);
+    overflow: hidden;
+    animation: type 1.5s steps(13) forwards;
+}
+
+.typing_no_reflection {
+    overflow: hidden;
+    animation: type-small 3s steps(13) forwards;
+    text-wrap: nowrap;
+}
+
+.typing-h2 {
+    position: relative;
+    color: #4FC3F7;
+    letter-spacing: 5px;
+    font-size: 4rem;
+    overflow: hidden;
+    margin-bottom: 0;
+    animation: type 5s steps(11) infinite;
+}
+
+.bellShake {
+    animation: bellShakee 2s infinite;
+}
+
+.fadeInDelayed {
+    animation: fadeIn 3s forwards 1500ms;
+}
+
+@keyframes bellShakee {
+    0% {
+        rotate: 15deg
+    }
+
+    50% {
+        rotate: -15deg
+    }
+
+    100% {
+        rotate: 15deg;
+    }
+
+}
+
+.animate-pulse {
+    animation: pulse 5s forwards infinite;
+}
+
+.animate-breathe {
+    animation: breathe 5s forwards infinite;
+}
+
+@keyframes pulse {
+    50% {
+        opacity: .5;
+        scale: 1.1;
+    }
+}
+
+@keyframes breathe {
+    50% {
+        scale: 1.1;
+    }
+}
+
+@keyframes type {
+
+    0%{
+        width: 0px;
+    }
+
+    100% {
+        width: 304.09px;
+    }
+}
+
+@keyframes type-small {
+
+    0%{
+        width: 0px;
+    }
+
+    100% {
+        width: 154.09px;
+    }
+}
+
+@media(max-width: 330px) {
+    .typing h2 {
+        font-size: 3rem;
+        animation: type 5s steps(10) infinite;
+    }
+
+    @keyframes type {
+
+        0%,
+        100% {
+            width: 0px;
+        }
+
+        30%,
+        60% {
+            width: 305px;
+        }
+    }
+}
