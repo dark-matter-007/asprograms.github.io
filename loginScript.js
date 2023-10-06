@@ -38,6 +38,7 @@ const database = getDatabase(app);
 
 document.getElementById("loginButton").onclick = handleLogin
 function handleLogin() {
+    document.getElementById("loginNotifications").innerText = "Processing request..."
     const name = document.getElementById("name").value
     const pswd = document.getElementById("pswd").value
     get( ref(database, "users/" + name)).then((response) => {
@@ -56,6 +57,7 @@ function handleLogin() {
 
 document.getElementById("signupButton").onclick = handleSignup
 function handleSignup() {
+    document.getElementById("loginNotifications").innerText = "Processing request..."
     const name = document.getElementById("name").value
     const pswd = document.getElementById("pswd").value
     set( ref(database, "users/" + name), { "name" : name, "pswd" : pswd }).then(() => {
