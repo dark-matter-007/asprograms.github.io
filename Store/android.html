@@ -1,117 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ASP || InfoStack</title>
-    <link rel="stylesheet" href="../Resources/CSS/masterStyle.css"/>
-    <link rel="stylesheet" href="../Resources/CSS/customStyle.css"/>
-    <link rel="icon" type="img/x-icon" href="ASPLauncherIcon2.png"/>
-    <link rel="img_src"   href="./Resources/Images/homeIcon.png"/>
-    <link rel="favicon" href="./Resources/Images/homeIcon.png"/>
-    <meta property="favicon" content="./Resources/Images/homeIcon"/>
-    <meta property="og:img" content="/ASPLauncherIcon2.jpg"/>  <meta property="og:img:width" content="1080"> <meta property="og:img:height" content="1080">
+    <title>Android Store</title>
+    <link rel="stylesheet" href="../Resources/masterStyle.css">
 </head>
 
-<body class=" bg-zinc-900 text-white flex-col pt-[100px] pb-[100px]">
-
-    <div class=" flex fixed top-0 w-screen py-5 z-10 bg-zinc-700/50 border-b-2 border-white/10 backdrop-blur-md">
-        <img src="../Resources/Images/androidIcon.png" class=" h-[35px] w-[35px] ml-5 mr-[-5px] hue-rotate-[120deg]"/>
-        <h1 class=" w-fit mr-auto ml-5"> <span class=" text-2xl text-cyan-300">ASP Store</span>  • Android </h1>
-    </div>
-
-    <!-- LATEST COMMITS HERE -->
-    <div class=" bg-zinc-800 min-w-[200px] ml-3 rounded-2xl w-[90%] max-w-[700px] p-5">        
-        <h1 class=" text-xl text-cyan-200 text-center pb-3 border-b-2 border-white/20"> Latest Release </h1>
-        <div class=" flex flex-col sm:flex-row mt-3">
-            
-            <img src="../Resources/Images/algorithmsIcon.png" class=" h-[150px] w-[150px] mx-auto sm:mr-auto">
-
-            <div>
-            <div class=" rounded-2xl px-5 pb-3 ">
-                <h1 class=" py-3"> <span class=" text-3xl text-cyan-200">Virmory</span> <span class=" ml-2 bg-zinc-900 px-2 py-[2px] rounded-md border-[1px] border-cyan-200/40">20⇩</span> <span class=" bg-zinc-900 px-1 py-[2px] rounded-md border-[1px] border-cyan-200/40">4.8★</span>  </h1>
-                <h1 class=" text-[8pt] px-2 py-1 mb-0 mr-auto bg-cyan-900 w-fit whitespace-nowrap rounded-md">v 1 . 1 . 0</h1>
-                <h1 class=" mt-5 text-lg text-green-200"> About this app </h1>
-                <p class=" text-sm ml-4"> Do you face difficulties in remembering your tasks, short terms or question-answer pairs? No worries! <br> We bring about a nice app with all 3 categories! <br><br>
-                With this app... <br>
-                <li class=" text-xs ml-10"> Store key-value pairs (small chunks)</li> 
-                <li class=" text-xs ml-10"> Store memo (plain & headless)</li> 
-                <li class=" text-xs ml-10"> Store quan (ques-ans)</li> 
-                <li class=" text-xs ml-10"> Perform dynamic search queries! </li> 
-                <li class=" text-xs ml-10"> Your encrypted data on our cloud, for free!</li> 
-            </p>
-                <p class=" mt-7 text-sm"> <span class=" text-pink-200 text-lg">What's new?</span> <br> 
-                <li class=" text-sm"> Optimised performance</li>
-                <li class=" text-sm"> Auto-Changing theme by time </li> </p>
-            </div>
-            <div class=" flex space-x-3 place-content-evenly">
-            <a href="https://github.com/ASPrograms/asprograms.github.io/releases/download/virmory_v1.1.0/Virmory_Installer.apk"><div class=" rounded-lg bg-cyan-800 w-fit mt-4 px-3 py-1 mx-auto hover:bg-cyan-600 hover:scale-110 animate-pulse cursor-pointer transition-all duration-300"> Update now! </div></a>
-            <a href="#"><div class=" rounded-lg bg-zinc-700 w-fit mt-4 px-3 py-1 mx-auto hover:bg-zinc-600 hover:scale-110 animate-pulse cursor-pointer transition-all duration-300"> Visit App Site </div></a>
-            </div>
-        </div>
+<body class=" pt-[100px] h-screen pr-5 overflow-x-hidden">
+    <!-- THE TOP FIXED NAVIGATION BAR -->
+    <div class="flex w-full fixed top-0 bg-[#b46969] py-3 pl-3 flex-row">
+        <div class="w-fit flex mr-auto w-full">
+            <img src="../Resources/Images/androidIcon.png" alt="icon" class=" saturate-0 brightness-200 w-auto h-auto">
+            <h1 class=" text-white text-2xl my-auto font-semibold ml-5">Android Store</h1>
+            <img src="../Resources/Images/accountIcon.png" alt="" class=" h-[50px] ml-auto mr-2 rounded-full">
         </div>
     </div>
 
-    <!-- ALL APPS HERE -->
-    <div class=" bg-zinc-800 mt-9 flex flex-col h-[300px] min-w-[200px] mx-auto w-[90%] max-w-[700px] rounded-lg overflow-hidden">
-        <h1 class=" text-center bg-zinc-700 py-3"> Apps </h1>
-        <div class="  overflow-y-scroll h-full px-4">
-            <div class=" flex py-4 border-b-2 border-white/10">
-                <div class=" flex flex-col w-[70px] h-auto">
-                    <img src="../Resources/Images/algorithmsIcon.png" class=" w-full h-auto">
-                    <h1 class=" text-[8pt] px-2 py-1 bg-zinc-900 w-fit whitespace-nowrap rounded-md"> Android 11</h1>
-                    <h1 class=" text-[8pt] px-2 py-1 mt-1 bg-zinc-900 w-fit whitespace-nowrap rounded-md">2GB RAM</h1>
-                    <h1 class=" text-[8pt] px-2 py-1 mt-auto mb-0 mx-auto bg-cyan-900 w-fit whitespace-nowrap rounded-md">v 1 . 1 . 0</h1>
+    <!-- ALL CONTENT HERE -->
+    <h1 class=" text-2xl font-semibold ml-4"> Welcome anonymous...</h1>
+
+    <h1 class=" mt-[30px] text-lg ml-5"> Installed apps : </h1>
+    <div class=" w-screen px-5">
+        <div class=" flex h-[150px] w-full rounded-xl bg-[#ddd]">
+            <h1 class=" w-fit mx-auto my-auto">Login to see this section</h1>
+        </div>
+    </div>
+
+    <h1 class=" mt-[30px] text-xl font-semibold ml-7"> Our Apps : </h1>
+
+    <!-- SCROLL CONTAINER -->
+    <div class=" w-full pl-5">
+        <div class=" flex overflow-x-scroll overflow-y-hidden h-[310px] w-full bg-[#ddd] rounded-2xl ">
+
+            <!-- APPS LINEAR LAYOUT -->
+            <div class=" flex flex-row px-3 pt-3 pb-4 h-[300px] w-fit space-x-4 shadow-lg">
+
+                <div
+                    class=" flex rounded-2xl shadow-lg shadow-black/40 bg-white overflow-hidden flex-col w-[150px] h-full">
+                    <img src="../Resources/Images/noteBirdIcon.png" alt="" class=" h-[140px]">
+                    <h1 class=" text-lg font-semibold w-fit mx-auto mt-2"> NoteBird</h1>
+                    <p class=" font-thin text-sm px-1"> Realtime Note-taking App like Google Keep.</p>
+                    <button class=" bg-black/70 text-white py-1 mt-auto font-semibold">Download</button>
                 </div>
-                <div>
-                <h1 class=" mt-5 ml-3 text-lg"> Sample App 1 • <span class=" bg-zinc-900 px-2 py-[2px] rounded-md border-[1px] border-cyan-200/40">20⇩</span> <span class=" bg-zinc-900 px-1 py-[2px] rounded-md border-[1px] border-cyan-200/40">4.8★</span> </h1>
-                <p class=" mt-2 ml-5 text-sm text-zinc-400"> With long long description that has potent of overflowing the layout, will be wrapped like this. </p>
-                <li class=" mt-1 ml-7 text-sm text-zinc-400"> Feature 1</li>
-                <li class=" mt-1 ml-7 text-sm text-zinc-400"> Feature 2</li>
-                <div  class=" text-sm py-1 px-3 bg-zinc-600 w-fit mt-2 mr-auto ml-5 rounded-full hover:scale-110 hover:bg-zinc-500 transition-all duration-300 cursor-pointer"> Visit app's page </div>
+
+                <div
+                    class=" flex rounded-2xl shadow-lg shadow-black/40 bg-white overflow-hidden flex-col w-[150px] h-full">
+                    <img src="../Resources/Images/cashalyzerIcon.png" alt="" class=" h-[140px]">
+                    <h1 class=" text-lg font-semibold w-fit mx-auto mt-2"> The Cashalyzer</h1>
+                    <p class=" font-thin text-sm px-1 text-center"> Offline Cash Management utility (mullti-pocket)</p>
+                    <button class=" bg-black/70 text-white py-1 mt-auto font-semibold">Download</button>
                 </div>
+
+                <div
+                    class=" flex rounded-2xl shadow-lg shadow-black/40 bg-white overflow-hidden flex-col w-[150px] h-full">
+                    <img src="../Resources/Images/ticTacToeIcon.png" alt="" class=" h-[140px]">
+                    <h1 class=" text-lg font-semibold w-fit mx-auto mt-2"> Tic Tac Toe</h1>
+                    <p class=" font-thin text-sm px-1 text-center"> Simple Tic Tac Toe Game with AI Opponent</p>
+                    <button class=" bg-black/70 text-white py-1 mt-auto font-semibold">Download</button>
+                </div>
+
+                <div
+                    class=" flex rounded-2xl shadow-lg shadow-black/40 bg-white overflow-hidden flex-col w-[150px] h-full">
+                    <img src="../Resources/Images/virmoryIcon.png" alt="" class=" h-[140px]">
+                    <h1 class=" text-lg font-semibold w-fit mx-auto mt-2"> Virmory </h1>
+                    <p class=" font-thin text-sm px-1 text-center"> Offline, Featured and Powerfull note-taking app</p>
+                    <button class=" bg-black/70 text-white py-1 mt-auto font-semibold">Download</button>
+                </div>
+
+
+                <!-- PROMO CARD -->
+                <div class=" h-[340px] translate-x-5 my-[-40px] w-[170px] bg-black">
+                    <h1 class=" mt-[100px] text-white font-semibold text-xl w-fit mx-auto"> The End!</h1>
+                    <h1 class=" font-thin text-white px-3 text-center"> Tap on the apps to view more options and
+                        information about
+                        them... </h1>
+                </div>
+
             </div>
-            <div class=" flex py-4 border-b-2 border-white/10">
-                <img src="../Resources/Images/algorithmsIcon.png" class=" h-[60px]">
-                <h1 class=" mt-5 ml-3"> Sample App 2 </h1>
-            </div>
-            <div class=" flex py-4 border-b-2 border-white/10">
-                <img src="../Resources/Images/algorithmsIcon.png" class=" h-[60px]">
-                <h1 class=" mt-5 ml-3"> Sample App 3 </h1>
-            </div>
+
         </div>
     </div>
 
+    <!-- RETURNING BUTTON -->
 
-    <!-- NAVIGATION BAR -->
-    <div class=' z-20 fixed bottom-0 w-screen py-3 bg-zinc-900/30  backdrop-blur-md border-t-2 border-white/20 rounded-t-2xl'>
-
-        <div class=' flex space-x-3 w-fit mx-auto fadeIn mt-2 reflectBelow'>
-        
-            <img  src="../Resources/Images/androidIcon.png" class=" animate-bounce h-[45px] pr-2 hue-rotate-[120deg] border-white/50 py-1 drop-shadow-sm shadow-white cursor-no-drop transition-all duration-300" />
-            
-            
-            <a href="../" class="tooltip">
-                <img src="../Resources/Images/homeIcon.png" class=" reflectBelow hover:translate-y-[-5px] drop-shadow-sm h-[30px] w-auto shadow-white cursor-pointer hover:scale-125 transition-all duration-300" />
-                <span class="tooltiptext text-sm">Home</span>
-              </a>
-              
-              <a href="../Help" class="tooltip">
-                  <img src="../Resources/Images/helpIcon.png" class=" reflectBelow hue-rotate-[45deg] drop-shadow-sm h-[30px] hover:translate-y-[-5px] shadow-white cursor-pointer hover:scale-125 transition-all duration-300" />
-                  <span class="tooltiptext text-sm">Help </span>
-                </a>
-                
-                <a href="../InfoStack" class="tooltip">
-                    <img src="../Resources/Images/dashStackIcon.png" class=" hue-rotate-[80deg] reflectBelow rounded-lg overflow-hidden drop-shadow-sm h-[30px] w-[30px] hover:translate-y-[-5px] shadow-white cursor-pointer hover:scale-125 transition-all duration-300" />
-                    <span class="tooltiptext text-sm">Store</span>
-                </a>
-            
-            <a href="../Store" class="tooltip">
-                <img src="../Resources/Images/appsIcon.png" class=" hue-rotate-[120deg] reflectBelow rounded-lg overflow-hidden drop-shadow-sm h-[30px] w-[30px] hover:translate-y-[-5px] shadow-white cursor-pointer hover:scale-125 transition-all duration-300" />
-                <span class="tooltiptext text-sm">Store</span>
-            </a>
-        </div>
+    <div class=" mt-10 h-[150px] w-screen flex flex-col">
+        <a class=" my-auto mb-0 mx-auto" href="./index.html">
+            <button type="button"
+                class=" h-fit w-fit px-8 py-3 text-[#b46969] font-semibold border-2 border-[#b46969] rounded-md hover:bg-[#b46969] hover:text-white transition-all duration-500">
+                Go back
+            </button>
+        </a>
+        <a class=" my-auto mt-0 mx-auto" href="../">
+            <button type="button" id="submissionButton"
+                class=" mt-2 w-fit mx-auto px-8 py-3 font-semibold border rounded-md border-[#b46969] bg-[#b46969] hover:bg-[#d38989] hover:scale-105 text-white transition-all duration-500">
+                Return to Home </button>
+        </a>
     </div>
-    
+
+    <h1 class=" absolute text-center bottom-0 w-full"> This page is under construction!</h1>
+
 </body>
+
 </html>

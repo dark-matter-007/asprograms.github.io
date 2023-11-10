@@ -1,90 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ASP || InfoStack</title>
-    <link rel="stylesheet" href="../Resources/CSS/masterStyle.css"/>
-    <link rel="stylesheet" href="../Resources/CSS/customStyle.css"/>
-    <link rel="icon" type="img/x-icon" href="ASPLauncherIcon2.png"/>
-    <link rel="img_src"   href="./Resources/Images/homeIcon.png"/>
-    <link rel="favicon" href="./Resources/Images/homeIcon.png"/>
-    <meta property="favicon" content="./Resources/Images/homeIcon"/>
-    <meta property="og:img" content="/ASPLauncherIcon2.jpg"/>  <meta property="og:img:width" content="1080"> <meta property="og:img:height" content="1080">
+    <title>Store</title>
+    <link rel="stylesheet" href="../Resources/masterStyle.css">
 </head>
 
-<body class=" bg-zinc-900 text-white flex-col pt-[100px] pb-[100px]">
+<body class=" pt-10">
+    <h1 class=" text-4xl text-[#b46969] font-semibold w-fit mx-auto">ASP Store</h1>
+    <p class=" font-thin w-fit mx-auto mt-2"> ◆ A place for our Apps and APIs ◆</p>
 
-    <div class=" flex fixed top-0 w-screen py-5 z-10 bg-zinc-700/50 border-b-2 border-white/10 backdrop-blur-md">
-        <img src="../Resources/Images/appsIcon.png" class=" h-[35px] w-[35px] mr-[-5px] ml-3 hue-rotate-[120deg]"/>
-        <h1 class=" w-fit mr-auto ml-5"> <span class=" text-2xl text-cyan-300">ASP Store</span>  • Updates Center</h1>
-    </div>
 
-    <!-- LATEST COMMITS HERE -->
-    <h1 class=" text-xl px-5 pt-5 bg-zinc-800 w-fit rounded-tr-2xl ml-3 mr-auto rounded-tl-2xl "> Latest Commit </h1>
-    <div class=" flex flex-wrap bg-zinc-800 ml-3 rounded-bl-2xl p-5">
-        
-        <div class=" bg-zinc-700 w-fit  max-w-[500px] rounded-2xl px-5 pb-3">
-            <h1 class=" py-3"> <span class=" text-2xl text-cyan-300">Virmory</span> • Android • <span class=" text-green-300">v1.1.0</span>  </h1>
-            <a href="https://github.com/ASPrograms/asprograms.github.io/releases/download/virmory_v1.1.0/Virmory_Installer.apk"><div class=" rounded-md bg-zinc-300 w-fit px-3 py-1 text-zinc-700 hover:bg-blue-200 hover:scale-110 animate-pulse cursor-pointer transition-all duration-300"> Update now! </div></a>
-            <p class=" mt-7 text-sm"> <span class=" text-pink-200 text-lg">What's new?</span> <br> 
-            <li class=" text-sm"> Optimised performance</li>
-            <li class=" text-sm"> Auto-Changing theme by time </li> </p>
-        </div>
-        
-        <div class=" bg-zinc-700 w-fit mt-4 lg:mt-0 sm:ml-3 max-w-[500px] rounded-2xl px-5 pb-3">
-            <h1 class=" py-3"> <span class=" text-2xl text-cyan-300">New Concept</span> • Free classes </h1>
-            <p class=" mt-2 text-sm"> <span class=" text-pink-200 text-lg">What's new?</span> <br> 
-            <li class=" text-sm"> Programming with C</li>
-            <li class=" text-sm"> Tricks and Shots</li>
-            <li class=" text-sm"> Interactive projects</li> </p>
-            <h1 class=" mt-4">Join from DashStack</h1>
-        </div>
+    <div class=" mt-14 border-2 border-[#eee] border-t-red-800 rounded-3xl w-fit px-10 pb-10 mx-auto shadow-lg">
 
-    </div>
-
-    
-    <div class=" mt-5 bg-zinc-800 rounded-xl p-5">
-        <h1 class=" text-xl text-cyan-200"> Dedicated Stores </h1>
-
-        <div class=" flex flex-wrap space-x-4 place-content-center mt-5">
-            <a href="./windows.html">
-            <div class=" bg-zinc-700 rounded-xl w-[120px] hover:scale-110 transition-all duration-500 cursor-pointer">
-                <img src="../Resources/Images/windowsIcon.png" class=" mx-auto saturate-0 brightness-200 h-[100px]">
-                <h1 class=" py-2 w-fit mx-auto"> Windows </h1>
+        <div
+            class=" flex shadow-md border-t-2 border-green-700 rounded-lg bg-[#aaffdd] w-fit h-fit py-3 pl-2 pr-5 mx-auto mt-10">
+            <img src="../Resources/Images/androidPhone.png" alt="Phone" class=" w-full h-auto ">
+            <div class=" flex flex-col w-full">
+                <h1 class=" font-semibold text-xl"> Android Apps and APIs </h1>
+                <div class=" flex space-x-1 mt-2">
+                    <button
+                        class=" bg-black/25 rounded-md text-white w-full px-4 py-2 font-semibold">Contribute</button>
+                    <a href="./android.html">
+                        <button
+                            class=" bg-black rounded-md text-white w-full px-4 py-2 font-semibold border-green-800 hover:text-black hover:scale-105 hover:border-l-[10px] hover:translate-x-1 hover:shadow-md hover:bg-white/80 transition-all duration-300">Visit</button>
+                    </a>
+                </div>
             </div>
-            </a>
-            <a href="./android.html">
-            <div class=" bg-zinc-700 rounded-xl w-[120px] hover:scale-110 transition-all duration-500 cursor-pointer">
-                <img src="../Resources/Images/androidIcon.png" class=" px-3 h-[100px] w-fit">
-                <h1 class=" py-2 w-fit mx-auto"> Android </h1>
+        </div>
+
+        <div
+            class=" flex shadow-md border-t-2 border-blue-700 rounded-lg bg-[#aaccff] w-fit h-fit py-3 pl-2 pr-5 mx-auto mt-10">
+            <img src="../Resources/Images/windowsDesktop.png" alt="Windows" class=" w-auto h-full scale-75 mr-2">
+            <div class=" flex flex-col">
+                <h1 class=" font-semibold text-xl">Windows Apps and <br>APIs</h1>
+                <div class=" flex space-x-1 mt-2">
+                    <button
+                        class=" bg-black/25 rounded-md text-white w-full px-4 py-2 font-semibold">Contribute</button>
+                    <button
+                        class=" bg-black rounded-md text-white w-full px-4 py-2 font-semibold border-white hover:scale-110 hover:bg-black/80 transition-all duration-300">Visit</button>
+                </div>
             </div>
-            </a>
         </div>
     </div>
 
-    <div class=' z-20 fixed bottom-0 w-screen py-3 bg-zinc-900/30  backdrop-blur-md border-t-2 border-white/20 rounded-t-2xl'>
 
-        <div class=' flex space-x-3 w-fit mx-auto fadeIn mt-2 reflectBelow'>
-        
-            <img  src="../Resources/Images/appsIcon.png" class=" animate-bounce h-[45px] pr-2 hue-rotate-[120deg] border-white/50 py-1 drop-shadow-sm shadow-white cursor-no-drop transition-all duration-300" />
-            
-            <a href="../Help" class="tooltip">
-                <img src="../Resources/Images/helpIcon.png" class=" reflectBelow hue-rotate-60 drop-shadow-sm h-[30px] hover:translate-y-[-5px] shadow-white cursor-pointer hover:scale-125 transition-all duration-300" />
-                <span class="tooltiptext text-sm">Help </span>
-            </a>
-            
-            <a href="../Store" class="tooltip">
-                <img src="../Resources/Images/dashStackIcon.png" class=" reflectBelow rounded-lg overflow-hidden drop-shadow-sm h-[30px] w-[30px] hover:translate-y-[-5px] shadow-white cursor-pointer hover:scale-125 transition-all duration-300" />
-                <span class="tooltiptext text-sm">Store</span>
-            </a>
-            
-            <a href="../" class="tooltip">
-                <img src="../Resources/Images/homeIcon.png" class=" reflectBelow hover:translate-y-[-5px] drop-shadow-sm h-[30px] w-auto shadow-white cursor-pointer hover:scale-125 transition-all duration-300" />
-                <span class="tooltiptext text-sm">Home</span>
-              </a>
-        </div>
+    <div class=" h-[150px] w-screen flex">
+        <a class=" my-auto mx-auto" href="../">
+            <button type="button"
+                class=" h-fit w-fit px-8 py-3 text-[#b46969] font-semibold border-2 border-[#b46969] rounded-md hover:bg-[#b46969] hover:text-white transition-all duration-500">
+                Return to Home
+            </button>
+        </a>
     </div>
-    
+
 </body>
+
 </html>

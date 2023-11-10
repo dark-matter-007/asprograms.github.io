@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe</title>
+    <link rel="stylesheet" href="../Resources/masterStyle.css">
+
+</head>
+
+
+<datalist id="notifOptions">
+    <option value="Every small update">
+    <option value="'Almost' all updates">
+    <option value="Considerate updates">
+    <option value="Only new launches">
+    <option value="Only very important updates">
+</datalist>
+
+<body class=" pt-10 overflow-x-hidden">
+    <script type="module" src="./submissionScript.js"></script>
+    <h1 class=" text-3xl text-[#b46969] font-semibold w-fit mx-auto">Subscribe to KeepUp Service</h1>
+
+    <div class=" rounded-xl border-2 border-[#b46969] w-[80%] mx-auto pb-3 mt-5 overflow-hidden">
+        <h1 class=" text-center w-full bg-[#eee] py-2 font-semibold">::: General for all :::</h1>
+
+        <div
+            class=" flex space-x-2 mr-auto ml-5 my-2 mt-5 w-fit shadow-md rounded-xl pl-3 py-auto border-2 border-[#b46969] overflow-hidden">
+            <h1 class=" my-auto">Name : </h1>
+            <input id="subscriberName" class=" bg-[#eee] py-2 pl-4" type="text">
+        </div>
+
+        <div
+            class=" flex space-x-2 ml-5 mr-auto my-2 w-fit shadow-md rounded-xl pl-3 py-auto border-2 border-[#b46969] overflow-hidden">
+            <h1 class=" my-auto">Notify me for : </h1>
+            <input id="subscriberOption" class=" bg-[#eee] py-2 pl-4" list="notifOptions">
+        </div>
+
+    </div>
+
+
+    <div class=" rounded-xl border-2 border-[#b46969] w-[80%] mx-auto pb-3 mt-5 overflow-hidden">
+        <h1 class=" text-center w-full bg-[#eee] py-2 font-semibold">WhatsApp Bus ( Optional )</h1>
+
+        <div
+            class=" flex space-x-2 ml-5 mr-auto my-2 mt-5 w-fit shadow-md rounded-xl pl-3 py-auto border-2 border-[#b46969] overflow-hidden">
+            <h1 class=" my-auto">Contact no. : </h1>
+            <input id="subscriberContact" class=" bg-[#eee] py-2 pl-4" type="number">
+        </div>
+
+    </div>
+
+    <div class=" rounded-xl border-2 border-[#b46969] w-[80%] mx-auto pb-3 mt-5 overflow-hidden">
+        <h1 class=" text-center w-full bg-[#eee] py-2 font-semibold">Mail Bus ( Optional )</h1>
+        <div
+            class=" flex space-x-2 ml-5 mr-auto my-2 mt-5 w-fit shadow-md rounded-xl pl-3 py-auto border-2 border-[#b46969] overflow-hidden">
+            <h1 class=" my-auto">Email : </h1>
+            <input id="subscriberMail" class=" bg-[#eee] py-2 pl-4" type="email">
+        </div>
+
+    </div>
+
+    <div class=" rounded-xl border-2 border-[#b46969] w-[80%] mx-auto pb-3 mt-5 overflow-hidden">
+        <h1 class=" text-center w-full bg-[#eee] py-2 font-semibold">Discord ( Optional )</h1>
+        <h1 class=" mx-auto w-fit my-5 font-semibold text-lg"> Coming soon! </h1>
+    </div>
+
+
+    <div class=" flex flex-col mt-5">
+        <a href="./index.html" class=" mx-auto">
+            <button type="button"
+                class=" mt-10 mx-auto lg:mr-auto lg:ml-0 w-fit px-8 py-3 font-semibold border rounded-md text-[#b46969] border-[#b46969] hover:bg-[#b46969] hover:text-white transition-all duration-500">
+                Return to previous </button></a>
+
+        <button type="button" id="submissionButton"
+            class=" mt-2 w-fit mx-auto px-8 py-3 font-semibold border rounded-md border-[#b46969] bg-[#b46969] hover:bg-[#d38989] hover:scale-105 text-white transition-all duration-500">
+            Submit </button>
+    </div>
+
+
+</body>
+
+</html>
