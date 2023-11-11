@@ -823,6 +823,10 @@ video {
   width: 50%;
 }
 
+.w-\[90\%\] {
+  width: 90%;
+}
+
 .max-w-\[300px\] {
   max-width: 300px;
 }
