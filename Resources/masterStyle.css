@@ -766,6 +766,10 @@ video {
   height: 100vh;
 }
 
+.h-\[50\%\] {
+  height: 50%;
+}
+
 .w-\[100px\] {
   width: 100px;
 }
@@ -1616,6 +1620,10 @@ video {
 
   .lg\:w-\[60\%\] {
     width: 60%;
+  }
+
+  .lg\:w-\[50\%\] {
+    width: 50%;
   }
 
   .lg\:translate-x-\[-20px\] {
