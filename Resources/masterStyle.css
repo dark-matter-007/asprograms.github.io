@@ -815,6 +815,18 @@ video {
   width: 100vw;
 }
 
+.w-\[100\%\] {
+  width: 100%;
+}
+
+.w-\[200\%\] {
+  width: 200%;
+}
+
+.w-\[120\%\] {
+  width: 120%;
+}
+
 .max-w-\[300px\] {
   max-width: 300px;
 }
@@ -1495,8 +1507,16 @@ video {
     margin-right: auto;
   }
 
+  .sm\:w-full {
+    width: 100%;
+  }
+
   .sm\:max-w-\[700px\] {
     max-width: 700px;
+  }
+
+  .sm\:flex-row {
+    flex-direction: row;
   }
 }
 
