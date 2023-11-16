@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notebird</title>
+    <link rel="stylesheet" href="./productsSpecificCSS.css">
+</head>
+
+<body style="-webkit-tap-highlight-color: #ffffff00;" class=" py-10 px-5">
+
+    <script type="module" src="./overlayController.js"></script>
+    <div class=" flex space-x-4 w-full max-w-[700px] mx-auto">
+        <img src="../../Resources/Images/noteBirdIcon.png" alt="Icon"
+            class=" shadow-lg shadow-[#11111155] w-[100px] rounded-full border-2 border-[#b46969]">
+        <div class=" flex flex-col place-content-center w-full">
+            <h1 class=" text-4xl mt-auto font-semibold text-[#b46969]"> NoteBird </h1>
+            <h1 class=" mb-auto bg-[#eee] w-fit px-2 py-1 rounded-xl shadow-md font-semibold mt-1 text-sm">
+                Note-taking
+            </h1>
+        </div>
+
+        <a href="https://github.com/ASPrograms/asprograms.github.io/releases/download/installerSet2/NotebirdInstaller.apk"
+            class=" h-fit my-auto">
+            <button
+                class=" mr-5 my-auto px-3 h-fit w-fit py-2 rounded-xl bg-[#000] text-white shadow-lg hover:border-l-[10px] hover:scale-110 border-black hover:bg-gradient-to-tr from-orange-600 to-pink-600 transition-all duration-500">
+                Download
+            </button>
+        </a>
+
+    </div>
+
+    <div
+        class=" w-full bg-[#eee] py-10 mt-10 rounded-t-3xl max-w-[700px] pl-5 border-b-2 border-[#b46969] shadow-lg mx-auto">
+        <h1 class=" text-2xl w-fit font-semibold">App Info</h1>
+        <p class=" mt-3"> NoteBird is a project distributed in the form of an app as well as a web-app ( under
+            development ) that aims making note-taking easier, more productive, more secure, more personalised and most
+            importantly, more organised. <br> The usage of this app is free up to 1 GB Storage of your notes. As for
+            now, we have developed it for 1GB max storage, would soon implement more storage. <br> <br> <span
+                class=" text-red-700">We store on our
+                server, but don't access your information</span></p>
+    </div>
+
+    <div
+        class=" flex mx-auto place-content-evenly mt-5 px-3 py-2 max-w-[700px] bg-[#eee] shadow-lg border-t-2 border-[#b46969]">
+        <h1>Downloads : 45</h1>
+        <div class=" w-2 h-full bg-[#b46969]"></div>
+        <h1>Rating : 4.7</h1>
+    </div>
+
+
+    <!-- APP SCREENSHOT SCROLLER -->
+    <div class=" mt-14 w-full max-w-[700px] mx-auto">
+        <h1 class=" text-2xl font-semibold mb-1 ml-3"> Screenshots </h1>
+        <div class=" flex overflow-x-scroll overflow-y-hidden h-fit w-full bg-[#ddd] rounded-2xl space-x-4 p-5 ">
+            <img src="../../Resources/Images/NoteBirdImages/appEntry.jpg" class=" w-[200px] h-fit rounded-xl">
+            <img src="../../Resources/Images/NoteBirdImages/titledNotesHome.jpg" class=" w-[200px] h-fit rounded-xl">
+            <img src="../../Resources/Images/NoteBirdImages/titledNotesPicture.jpg" class=" w-[200px] h-fit rounded-xl">
+            <img src="../../Resources/Images/NoteBirdImages/titledNotesPicturesOpen.jpg"
+                class=" w-[200px] h-fit rounded-xl">
+            <img src="../../Resources/Images/NoteBirdImages/headlessNotesImage.jpg" class=" w-[200px] h-fit rounded-xl">
+
+        </div>
+    </div>
+
+    <!-- IMAGE SPECIFIC OVERLAY -->
+    <!-- <img id="imageOverlay" src="../../Resources/Images/NoteBirdImages/titledNotesPicturesOpen.jpg" alt=""
+        class="h-screen w-fit fixed top-0 align-middle">
+    <button id="imageOverlay" onclick=" hideImageOverlay"
+        class=" bg-white rounded-full fixed top-10 right-10 p-2 w-[50px] h-[50px]">
+        X </button> -->
+
+
+</body>
+
+</html>

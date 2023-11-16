@@ -10,8 +10,8 @@
 
 <body style="-webkit-tap-highlight-color: #ffffff00;" class=" pt-[100px] h-screen pr-5 overflow-x-hidden">
     <!-- THE TOP FIXED NAVIGATION BAR -->
-    <div class="flex w-full fixed top-0 bg-[#b46969] py-3 pl-3 flex-row">
-        <div class="w-fit flex mr-auto w-full">
+    <div class="flex w-full z-10 shadow-lg shadow-[#00000055] fixed top-0 bg-[#b46969] py-3 pl-3 flex-row">
+        <div class="flex mr-auto w-full">
             <img src="../Resources/Images/androidIcon.png" alt="icon" class=" saturate-0 brightness-200 w-auto h-auto">
             <h1 class=" text-white text-2xl my-auto font-semibold ml-5">Android Store</h1>
             <img src="../Resources/Images/accountIcon.png" alt="" class=" h-[50px] ml-auto mr-2 rounded-full">
@@ -19,31 +19,32 @@
     </div>
 
     <!-- ALL CONTENT HERE -->
-    <h1 class=" text-2xl font-semibold ml-4"> Welcome anonymous...</h1>
+    <h1 class=" text-2xl font-semibold max-w-[700px] mx-auto"> Welcome anonymous...</h1>
 
-    <h1 class=" mt-[30px] text-lg ml-5"> Installed apps : </h1>
-    <div class=" w-screen px-5">
+    <!-- INSTALLED APP SCROLLER HERE -->
+    <div class=" w-screen pl-5 max-w-[700px] mx-auto">
+        <h1 class=" mt-[30px] text-xl font-semibold ml-3 mb-2"> Installed apps : </h1>
         <div class=" flex h-[150px] w-full rounded-xl bg-[#ddd]">
             <h1 class=" w-fit mx-auto my-auto">Login to see this section</h1>
         </div>
     </div>
 
-    <h1 class=" mt-[30px] text-xl font-semibold ml-7"> Our Apps : </h1>
 
     <!-- SCROLL CONTAINER -->
-    <div class=" w-full pl-5">
+    <div class=" w-full pl-5 max-w-[700px] mx-auto">
+        <h1 class=" mt-[30px] text-xl font-semibold ml-3 mb-2"> Our Apps : </h1>
         <div class=" flex overflow-x-scroll overflow-y-hidden h-[310px] w-full bg-[#ddd] rounded-2xl ">
 
             <!-- APPS LINEAR LAYOUT -->
             <div class=" flex flex-row px-3 pt-3 pb-4 h-[300px] w-fit space-x-4 shadow-lg">
 
                 <!-- NOTEBIRD -->
-                <div
-                    class=" flex rounded-2xl shadow-lg shadow-black/40 bg-white overflow-hidden flex-col w-[150px] h-full">
+                <div onclick=" window.location = './Products/notebird.html'; "
+                    class=" flex rounded-2xl shadow-lg shadow-black/40 cursor-pointer hover:scale-105 transition-all duration-300 bg-white overflow-hidden flex-col w-[150px] h-full">
                     <img src="../Resources/Images/noteBirdIcon.png" alt="" class=" h-[140px]">
                     <h1 class=" text-lg font-semibold w-fit mx-auto mt-2"> NoteBird<span
                             class=" text-sm font-thin text-[#993333]"><i>Beta</i></span></h1>
-                    <p class=" font-thin text-sm px-1"> Realtime Note-taking App like Google Keep.</p>
+                    <p class=" font-thin text-sm px-1"> Realtime Note-taking App like Google Keep. </p>
                     <a href="https://github.com/ASPrograms/asprograms.github.io/releases/download/installerSet2/NotebirdInstaller.apk"
                         class="mt-auto w-full"><button
                             class=" bg-black/70 w-full text-white py-1 font-semibold hover:bg-[#b46969] hover:scale-105 transition-all duration-500">Download</button></a>
@@ -51,7 +52,7 @@
 
                 <!-- CASHALYZER -->
                 <div
-                    class=" flex rounded-2xl shadow-lg shadow-black/40 bg-white overflow-hidden flex-col w-[150px] h-full">
+                    class=" flex rounded-2xl shadow-lg shadow-black/40 bg-white overflow-hidden flex-col w-[150px] h-full cursor-pointer hover:scale-105 transition-all duration-300">
                     <img src="../Resources/Images/cashalyzerIcon.png" alt="" class=" h-[140px]">
                     <h1 class=" text-lg font-semibold w-fit mx-auto mt-2"> The Cashalyzer</h1>
                     <p class=" font-thin text-sm px-1 text-center"> Offline Cash Management utility (mullti-pocket)</p>
@@ -62,7 +63,7 @@
 
                 <!-- TIC TAC TOE -->
                 <div
-                    class=" flex rounded-2xl shadow-lg shadow-black/40 bg-white overflow-hidden flex-col w-[150px] h-full">
+                    class=" flex rounded-2xl shadow-lg shadow-black/40 bg-white overflow-hidden flex-col w-[150px] h-full cursor-pointer hover:scale-105 transition-all duration-300">
                     <img src="../Resources/Images/ticTacToeIcon.png" alt="" class=" h-[140px]">
                     <h1 class=" text-lg font-semibold w-fit mx-auto mt-2"> Tic Tac Toe</h1>
                     <p class=" font-thin text-sm px-1 text-center"> Simple Tic Tac Toe Game with AI Opponent</p>
@@ -73,7 +74,7 @@
 
                 <!-- VIRMORY -->
                 <div
-                    class=" flex rounded-2xl shadow-lg shadow-black/40 bg-white overflow-hidden flex-col w-[150px] h-full">
+                    class=" flex rounded-2xl shadow-lg shadow-black/40 bg-white overflow-hidden flex-col w-[150px] h-full cursor-pointer hover:scale-105 transition-all duration-300">
                     <img src="../Resources/Images/virmoryIcon.png" alt="" class=" h-[140px]">
                     <h1 class=" text-lg font-semibold w-fit mx-auto mt-2"> Virmory </h1>
                     <p class=" font-thin text-sm px-1 text-center"> Offline, Featured and Powerfull note-taking app</p>
