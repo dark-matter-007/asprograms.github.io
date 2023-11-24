@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASPrograms | Home</title>
+    <link rel="stylesheet" href="./Resources/masterStyle.css">
+</head>
+
+<body style="-webkit-tap-highlight-color: #ffffff00;">
+    <!-- <script type="module" src="./loginScript.js"></script> -->
+    <script type="module" src="./cookieThemeSwitcher.js"></script>
+    <!-- THE MASTER FLEX VIEW -->
+
+    <div
+        class="flex flex-col lg:flex-row align-middle place-content-center overflow-x-hidden justify-center w-screen h-screen">
+        <!-- THE UPPER , LEFT SECTION -->
+        <div
+            class=" translate-y-[-50px] h-[60%] lg:w-[40%] lg:h-full place-content-center align-middle justify-center flex flex-col">
+            <div
+                class=" h-[100px] w-[100px] mt-auto mb-2 mx-auto translate-x-[-125%] translate-y-[90%] border-t-[6px] rounded-lg border-l-[6px] border-[#ffffff] changes_with_theme">
+            </div>
+            <h1 id="asprogramsText" class=" text-4xl md:text-5xl mx-auto w-[300px] mb-5 h-fit font-bold">
+            </h1>
+            <h1 class="max-w-[300px] md:text-lg mx-auto h-fit mb-auto"> <span class=" font-semibold">A platform by -
+                    "Ashwin Sharma"</span> <br> ASPrograms
+                is a
+                platform for hosting web-apps, mobiile apps, desktop apps, APIs, tools and much more! <br>
+                I am Ashwin Sharma and hereby I promise the visitors a good tour through the site. <br>
+                Thank you!</h1>
+
+        </div>
+
+        <div
+            class=" px-2 py-2 space-x-1 bg-[#ddd] h-[50px] lg:h-fit lg:space-x-0 lg:space-y-1 lg:w-[50px] w-fit rounded-full mb-2 lg:mt-auto ml-auto mr-4 flex flex-row lg:flex-col">
+
+            <div id="brownSwitch"
+                class=" h-[30px] w-[30px] rounded-full bg-[#b46969] cursor-pointer hover:translate-y-[-5px] lg:hover:translate-y-[0px] lg:hover:translate-x-[5px] hover:scale-110 transition-all duration-300">
+            </div>
+            <div id="blueSwitch"
+                class=" h-[30px] w-[30px] rounded-full bg-[#566d8f] cursor-pointer hover:translate-y-[-5px] hover:scale-110 transition-all duration-300 lg:hover:translate-y-[0px] lg:hover:translate-x-[5px] ">
+            </div>
+            <div id="charcoalSwitch"
+                class=" h-[30px] w-[30px] rounded-full bg-[#222222] cursor-pointer hover:translate-y-[-5px] hover:scale-110 transition-all duration-300 lg:hover:translate-y-[0px] lg:hover:translate-x-[5px] ">
+            </div>
+            <div id="greenSwitch"
+                class=" h-[30px] w-[30px] rounded-full bg-[#587a45] cursor-pointer hover:translate-y-[-5px] hover:scale-110 transition-all duration-300 lg:hover:translate-y-[0px] lg:hover:translate-x-[5px] ">
+            </div>
+        </div>
+
+        <!-- THE LOWER / RIGHT SECTION -->
+        <div id="lowerRightSection"
+            class=" text-white bg-[#ffffff] h-fit lg:w-[60%] lg:h-full overflow-x-hidden changes_with_theme">
+            <!-- UPPER FLEX -->
+            <div class=" flex w-full mb-10">
+                <div class=" font-thin font-sans h-fit w-fit p-5 mr-auto border-r-2 rounded-br-md">
+                    <h1 id="visitCounterText" class=" text-sm border-b-[1px] rounded-md px-3"> paused </h1>
+                    <h1 class=" text-center"> Visits </h1>
+                </div>
+
+                <h1 class=" mx-auto my-auto text-3xl font-semibold mr-auto"> Now with Stats! </h1>
+                <div class=" font-thin font-sans h-fit w-fit p-5 ml-auto border-l-2 rounded-bl-md">
+                    <h1 class=" text-3xl border-b-[1px] rounded-md px-3"> 72 </h1>
+                    <h1 class=" text-center"> Logins </h1>
+                </div>
+            </div>
+
+
+            <!-- NAVIGATION CONTAINER -->
+            <div class=" w-fit mt-32 px-5 max-w-[80%] mx-auto border-t-[1px] rounded-xl border-white">
+                <h1 class=" mt-4 mx-auto text-3xl w-fit font-thin"> Explore AS Programs... </h1>
+                <a href="./About">
+                    <button type="button"
+                        class=" mt-4 mx-auto w-fit px-8 py-3 font-semibold border rounded dark:border-gray-100 dark:text-gray-100 hover:bg-white hover:text-black transition-all duration-500">
+                        About
+                        Ashwin Sharma
+                    </button>
+                </a>
+
+                <a href="./NewsAndForms">
+                    <button type="button"
+                        class=" mt-2 mx-auto w-fit px-8 py-3 font-semibold border rounded dark:border-gray-100 dark:text-gray-100 hover:bg-white hover:text-black transition-all duration-500">News
+                        & Forms
+                    </button></a>
+
+                <a href="./Store">
+                    <button type="button"
+                        class=" mt-2 mx-auto w-fit px-8 py-3 font-semibold border rounded dark:border-gray-100 dark:text-gray-100 hover:bg-white hover:text-black transition-all duration-500">Store</button>
+                </a>
+            </div>
+
+            <!-- COMMON QUESTIONS SECTION -->
+            <div class=" mt-28 px-16">
+                <h1 class=" text-2xl font-light"> Frequently Asked Questions ( FAQs )</h1>
+
+                <div class=" mt-5 pt-2 px-7 border-t-[1px] rounded-lg border-white">
+                    <h1 class=" text-lg"> Q. Why is this platform needed?</h1>
+                    <h1 class=" font-thin translate-x-5 pr-5"> The first step towards publication, is testing,
+                        debugging
+                        and providing early access of the upcoming products. <br> Hereby, we provide the canary as well
+                        as
+                        stable builds of our softwares.</h1>
+                </div>
+
+                <div class=" mt-5 pt-2 px-7 border-t-[1px] rounded-lg border-white">
+                    <h1 class=" text-lg"> Q. Are all the software free?</h1>
+                    <h1 class=" font-thin translate-x-5 pr-5"> The shortened answer is 'No'. <br> Some products of us,
+                        have in-app purchase for premium features, in order to support us too! </h1>
+                </div>
+            </div>
+
+            <div class=" h-[100px]">
+                <h1 class=" text-sm bg-gradient-to-br from-[#b46969] to-[#613838]"></h1>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
