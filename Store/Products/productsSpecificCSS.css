@@ -550,6 +550,11 @@ video {
   top: 2.5rem;
 }
 
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -564,12 +569,20 @@ video {
   margin-bottom: 0.25rem;
 }
 
+.mb-\[-39px\] {
+  margin-bottom: -39px;
+}
+
 .mb-auto {
   margin-bottom: auto;
 }
 
 .ml-3 {
   margin-left: 0.75rem;
+}
+
+.ml-\[-20px\] {
+  margin-left: -20px;
 }
 
 .mr-5 {
@@ -596,52 +609,20 @@ video {
   margin-top: 1.25rem;
 }
 
-.mt-auto {
-  margin-top: auto;
-}
-
-.ml-\[-\] {
-  margin-left: -;
-}
-
-.ml-\[-5\] {
-  margin-left: -5;
-}
-
-.ml-\[-5px\] {
-  margin-left: -5px;
-}
-
-.ml-\[-10px\] {
-  margin-left: -10px;
-}
-
-.ml-\[-20px\] {
-  margin-left: -20px;
-}
-
-.mb-\[-20px\] {
-  margin-bottom: -20px;
-}
-
 .mt-\[20px\] {
   margin-top: 20px;
 }
 
-.mb-\[0px\] {
-  margin-bottom: 0px;
+.mt-auto {
+  margin-top: auto;
 }
 
-.mb-\[-40px\] {
-  margin-bottom: -40px;
+.mr-7 {
+  margin-right: 1.75rem;
 }
 
-.mb-\[-38px\] {
-  margin-bottom: -38px;
-}
-
-.mb-\[-39px\] {
-  margin-bottom: -39px;
+.mr-10 {
+  margin-right: 2.5rem;
 }
 
 .flex {
@@ -698,6 +679,10 @@ video {
   flex-direction: column;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .place-content-center {
   place-content: center;
 }
@@ -706,10 +691,26 @@ video {
   place-content: space-evenly;
 }
 
+.space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
 .overflow-y-hidden {
@@ -779,14 +780,14 @@ video {
   background-color: rgb(238 238 238 / var(--tw-bg-opacity));
 }
 
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
 .bg-red-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .from-orange-600 {

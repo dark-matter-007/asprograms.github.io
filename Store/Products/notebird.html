@@ -8,23 +8,29 @@
     <link rel="stylesheet" href="./productsSpecificCSS.css">
 </head>
 
-<body style="-webkit-tap-highlight-color: #ffffff00;" class=" py-10 px-5">
+<body style="-webkit-tap-highlight-color: #ffffff00;" class=" py-10 px-5 overflow-x-hidden">
 
     <script type="module" src="./overlayController.js"></script>
-    <div class=" flex space-x-4 w-full max-w-[700px] mx-auto">
+    <div class=" flex space-x-4 w-full max-w-[700px] mx-auto ml-3">
         <img src="../../Resources/Images/noteBirdIcon.png" alt="Icon"
             class=" shadow-lg shadow-[#11111155] w-[100px] rounded-full border-2 border-[#b46969]">
         <div class=" flex flex-col place-content-center w-full">
             <h1 class=" text-4xl mt-auto font-semibold text-[#b46969]"> NoteBird </h1>
-            <h1 class=" mb-auto bg-[#eee] w-fit px-2 py-1 rounded-xl shadow-md font-semibold mt-1 text-sm">
-                Note-taking
-            </h1>
+            <div class=" flex space-x-2">
+                <h1 class=" mb-auto bg-[#eee] w-fit px-2 py-1 rounded-xl shadow-md font-semibold mt-1 text-sm">
+                    Note-taking
+                </h1>
+                <h1 class=" mb-auto mx-2 bg-[#eee] w-fit px-2 py-1 rounded-xl shadow-md font-semibold mt-1 text-sm">
+                    v 1 . 1
+                </h1>
+            </div>
+
         </div>
 
-        <a href="https://github.com/ASPrograms/asprograms.github.io/releases/download/installerSet2/NotebirdInstaller.apk"
+        <a href="https://github.com/ASPrograms/NoteBirdRepository/releases/download/v1.0.1/NotebirdInstaller.apk"
             class=" h-fit my-auto">
             <button
-                class=" mr-5 my-auto px-3 h-fit w-fit py-2 rounded-xl bg-[#000] text-white shadow-lg hover:border-l-[10px] hover:scale-110 border-black hover:bg-gradient-to-tr from-orange-600 to-pink-600 transition-all duration-500">
+                class=" mr-10 my-auto px-3 h-fit w-fit py-2 rounded-xl bg-[#000] text-white shadow-lg hover:border-l-[10px] hover:scale-110 border-black hover:bg-gradient-to-tr from-orange-600 to-pink-600 transition-all duration-500">
                 Download
             </button>
         </a>
@@ -40,10 +46,10 @@
             now, we have developed it for 1GB max storage, would soon implement more storage. <br> <br> <span
                 class=" text-red-700">We store on our
                 server, but don't access your information</span></p>
-        <div class=" mt-[20px] mb-[-39px] bg-red-500 text-white text-center ml-[-20px]"> The app is under development,
+        <!-- <div class=" mt-[20px] mb-[-39px] bg-red-500 text-white text-center ml-[-20px]"> The app is under development,
             and
             may have
-            bugs </div>
+            bugs </div> -->
     </div>
 
     <div
